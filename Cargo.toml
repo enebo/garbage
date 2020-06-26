@@ -1,0 +1,19 @@
+[package]
+name = "hash_of_little"
+version = "0.1.0"
+authors = ["Thomas E. Enebo <tom.enebo@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fnv = "1.0.7"
+lazy_static = "1.4.0"
+nix = "0.17"
+
+[dev-dependencies]
+criterion = "0.3.2"
+
+[[bench]]
+name = "bench_envs"
+harness = false
